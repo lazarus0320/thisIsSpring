@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.thisisspring.service.CoffeeBeanServiceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-11-20T13:27:17" hostname="MIN" time="0.585">
+  <properties/>
+  <testcase name="createCoffeeBeanTest()" classname="com.example.thisisspring.service.CoffeeBeanServiceTest" time="0.585">
+    <failure message="java.lang.NullPointerException: 해당 이름에 대한 CoffeeBean이 존재하지 않습니다." type="java.lang.NullPointerException">java.lang.NullPointerException: 해당 이름에 대한 CoffeeBean이 존재하지 않습니다.
+	at com.example.thisisspring.service.CoffeeBeanServiceTest.lambda$createCoffeeBeanTest$0(CoffeeBeanServiceTest.java:35)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.example.thisisspring.service.CoffeeBeanServiceTest.createCoffeeBeanTest(CoffeeBeanServiceTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[22:27:12.716 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.thisisspring.service.CoffeeBeanServiceTest]: CoffeeBeanServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:27:12.794 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.thisisspring.ThisIsSpringApplication for test class com.example.thisisspring.service.CoffeeBeanServiceTest
+22:27:12.934 [Test worker] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+22:27:13,106 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+22:27:13,134 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [console]
+22:27:13,135 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+22:27:13,138 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+22:27:13,149 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [console-infolog] not referenced. Skipping further processing.
+22:27:13,150 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.example.thisisspring] to DEBUG
+22:27:13,150 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@540a903b - Propagating DEBUG level on Logger[com.example.thisisspring] onto the JUL framework
+22:27:13,150 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [jdbc.sqlonly] to INFO
+22:27:13,150 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@540a903b - Propagating INFO level on Logger[jdbc.sqlonly] onto the JUL framework
+22:27:13,150 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [jdbc.resultsettable] to INFO
+22:27:13,151 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@540a903b - Propagating INFO level on Logger[jdbc.resultsettable] onto the JUL framework
+22:27:13,151 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+22:27:13,151 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@540a903b - Propagating INFO level on Logger[ROOT] onto the JUL framework
+22:27:13,151 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [console] to Logger[ROOT]
+22:27:13,151 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@24361cfc - End of configuration.
+22:27:13,151 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@34e20e6b - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+?[32m2023-11-20 22:27:13.194?[0;39m ?[35m[Test worker]?[0;39m ?[34m INFO?[0;39m ?[36mcom.example.thisisspring.service.CoffeeBeanServiceTest?[0;39m - ?[33mStarting CoffeeBeanServiceTest using Java 17.0.8 with PID 5696 (started by astar in C:\thisIsSpring)
+?[0;39m?[32m2023-11-20 22:27:13.194?[0;39m ?[35m[Test worker]?[0;39m ?[39mDEBUG?[0;39m ?[36mcom.example.thisisspring.service.CoffeeBeanServiceTest?[0;39m - ?[33mRunning with Spring Boot v3.1.5, Spring v6.0.13
+?[0;39m?[32m2023-11-20 22:27:13.195?[0;39m ?[35m[Test worker]?[0;39m ?[34m INFO?[0;39m ?[36mcom.example.thisisspring.service.CoffeeBeanServiceTest?[0;39m - ?[33mNo active profile set, falling back to 1 default profile: "default"
+?[0;39m?[32m2023-11-20 22:27:13.825?[0;39m ?[35m[Test worker]?[0;39m ?[34m INFO?[0;39m ?[36morg.springframework.data.repository.config.RepositoryConfigurationDelegate?[0;39m - ?[33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+?[0;39m?[32m2023-11-20 22:27:13.884?[0;39m ?[35m[Test worker]?[0;39m ?[34m INFO?[0;39m ?[36morg.springframework.data.repository.config.RepositoryConfigurationDelegate?[0;39m - ?[33mFinished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+?[0;39m?[32m2023-11-20 22:27:14.280?[0;39m ?[35m[Test worker]?[0;39m ?[34m INFO?[0;39m ?[36mcom.zaxxer.hikari.HikariDataSource?[0;39m - ?[33mHikariPool-1 - Starting...
+?[0;39m?[32m2023-11-20 22:27:14.531?[0;39m ?[35m[Test worker]?[0;39m ?[34m INFO?[0;39m ?[36mcom.zaxxer.hikari.pool.HikariPool?[0;39m - ?[33mHikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+?[0;39m?[32m2023-11-20 22:27:14.534?[0;39m ?[35m[Test worker]?[0;39m ?[34m INFO?[0;39m ?[36mcom.zaxxer.hikari.HikariDataSource?[0;39m - ?[33mHikariPool-1 - Start completed.
+?[0;39m?[32m2023-11-20 22:27:14.592?[0;39m ?[35m[Test worker]?[0;39m ?[34m INFO?[0;39m ?[36morg.hibernate.jpa.internal.util.LogHelper?[0;39m - ?[33mHHH000204: Processing PersistenceUnitInfo [name: default]
+?[0;39m?[32m2023-11-20 22:27:14.661?[0;39m ?[35m[Test worker]?[0;39m ?[34m INFO?[0;39m ?[36morg.hibernate.Version?[0;39m - ?[33mHHH000412: Hibernate ORM core version 6.2.13.Final
+?[0;39m?[32m2023-11-20 22:27:14.664?[0;39m ?[35m[Test worker]?[0;39m ?[34m INFO?[0;39m ?[36morg.hibernate.cfg.Environment?[0;39m - ?[33mHHH000406: Using bytecode reflection optimizer
+?[0;39m?[32m2023-11-20 22:27:14.997?[0;39m ?[35m[Test worker]?[0;39m ?[34m INFO?[0;39m ?[36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo?[0;39m - ?[33mNo LoadTimeWeaver setup: ignoring JPA class transformer
+?[0;39m?[32m2023-11-20 22:27:15.727?[0;39m ?[35m[Test worker]?[0;39m ?[34m INFO?[0;39m ?[36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator?[0;39m - ?[33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+?[0;39m?[32m2023-11-20 22:27:15.757?[0;39m ?[35m[Test worker]?[0;39m ?[34m INFO?[0;39m ?[36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean?[0;39m - ?[33mInitialized JPA EntityManagerFactory for persistence unit 'default'
+?[0;39m?[32m2023-11-20 22:27:16.562?[0;39m ?[35m[Test worker]?[0;39m ?[31m WARN?[0;39m ?[36morg.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration?[0;39m - ?[33mspring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+?[0;39m?[32m2023-11-20 22:27:17.850?[0;39m ?[35m[Test worker]?[0;39m ?[34m INFO?[0;39m ?[36mcom.example.thisisspring.service.CoffeeBeanServiceTest?[0;39m - ?[33mStarted CoffeeBeanServiceTest in 4.914 seconds (process running for 5.781)
+?[0;39m]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
