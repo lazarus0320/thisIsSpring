@@ -7,9 +7,11 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AccessLevel;
 import lombok.Builder;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 // Setter 제거
+@Getter
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class CoffeeBean {
@@ -18,7 +20,6 @@ public class CoffeeBean {
     private Long id;
     private String name;
     private int quantity;
-//test
     @Builder // 생성자 위에 @Builder 적용
     public CoffeeBean(String name, int quantity) {
         this.name = name;
@@ -30,10 +31,10 @@ public class CoffeeBean {
     }
 
     public CoffeeBeanDto toDto() {
-        CoffeeBeanDto coffeeBeanDto = new CoffeeBeanDto();
-        coffeeBeanDto.setId(this.id);
-        coffeeBeanDto.setName(this.name);
-        coffeeBeanDto.setQuantity(this.quantity);
-        return coffeeBeanDto;
+        return CoffeeBeanDto.builder()
+                .id(this.id)
+                .name(this.name)
+                .quantity(this.quantity)
+                .build();
     }
 }

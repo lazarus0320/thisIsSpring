@@ -33,3 +33,9 @@ y
 Isrc/test/java/com/example/thisisspring/service/CoffeeBeanServiceTest.java,8\d\8d85ff2dd69c8dbea7a79dc0eade63773b8e13db
 h
 8src/main/java/com/example/thisisspring/dto/Response.java,b\c\bcec6664db9973447b2040da9b3f17c038ff880b
+u
+Esrc/main/java/com/example/thisisspring/exception/customException.java,c\a\caa2bdcc46c6c4545390b4321dd2664c4cfb92b8
+o
+?src/main/java/com/example/thisisspring/exception/ErrorCode.java,2\1\21de4028d30ae0b06dbbdaffad7fdd72fd9c9f99
+u
+Esrc/main/java/com/example/thisisspring/exception/CustomException.java,f\7\f7e6cf73abcb451de0f33c3af46498fec9b691f6

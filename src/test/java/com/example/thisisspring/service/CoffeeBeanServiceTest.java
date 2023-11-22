@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.NoSuchElementException;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
@@ -30,9 +32,8 @@ class CoffeeBeanServiceTest {
         coffeeBeanRepository.save(coffee);
 
         //then
-//        assertThat(coffeeBeanRepository.findById(1L)).isPresent();
         CoffeeBean savedCoffee = coffeeBeanRepository.findByName(name)
-                .orElseThrow(() -> new NullPointerException("해당 이름에 대한 CoffeeBean이 존재하지 않습니다."));
+                .orElseThrow(() -> new NoSuchElementException("해당 이름에 대한 CoffeeBean이 존재하지 않습니다."));
 
         assertThat(savedCoffee.getName()).isEqualTo(name);
         assertThat(savedCoffee.getQuantity()).isEqualTo(quantity);

@@ -1,17 +1,19 @@
 package com.example.thisisspring.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class CoffeeBeanDto {
     private Long id;
     private String name;
     private int quantity;
 
+    @Builder
+    public CoffeeBeanDto(Long id, String name, int quantity) {
+        this.id = id;
+        this.name = name;
+        this.quantity = quantity;
+    }
 }

@@ -2,8 +2,9 @@ package com.example.thisisspring.service;
 
 import com.example.thisisspring.domain.CoffeeBean;
 import com.example.thisisspring.dto.CoffeeBeanDto;
+import com.example.thisisspring.exception.CustomException;
+import com.example.thisisspring.exception.ErrorCode;
 import com.example.thisisspring.repository.CoffeeBeanRepository;
-import jakarta.annotation.PostConstruct;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -21,7 +22,7 @@ public class CoffeeBeanService {
         this.coffeeBeanRepository = coffeeBeanRepository;
     }
 
-    @PostConstruct
+
     public void saveTenCoffeeBeansEfficient() {
         List<CoffeeBean> coffeeBeans = new ArrayList<>();
 
@@ -33,10 +34,15 @@ public class CoffeeBeanService {
         }
 
         coffeeBeanRepository.saveAll(coffeeBeans);
+
     }
 
     public List<CoffeeBeanDto> getAllCoffeeBeansDto() {
         List<CoffeeBean> coffeeBeans = coffeeBeanRepository.findAll();
+
+        if (coffeeBeans.isEmpty()) {
+            throw new CustomException(ErrorCode.COFFEE_BEAN_DATA_NOT_FOUND);
+        }
 
         // CoffeeBean을 CoffeeBeanDto로 변환하여 리스트로 반환
         return coffeeBeans.stream()

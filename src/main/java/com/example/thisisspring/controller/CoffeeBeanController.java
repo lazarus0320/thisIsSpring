@@ -1,6 +1,7 @@
 package com.example.thisisspring.controller;
 
 import com.example.thisisspring.dto.CoffeeBeanDto;
+import com.example.thisisspring.dto.Response;
 import com.example.thisisspring.dto.UpdateCoffeeBeanDto;
 import com.example.thisisspring.repository.CoffeeBeanRepository;
 import com.example.thisisspring.service.CoffeeBeanService;
@@ -39,9 +40,10 @@ public class CoffeeBeanController {
             }
     )
     @PostMapping("/create")
-    public String createCoffeeBeans() {
+    public ResponseEntity<Response<List<CoffeeBeanDto>>> createCoffeeBeans() {
         coffeeBeanService.saveTenCoffeeBeansEfficient();
-        return "10개의 커피 데이터가 생성되었습니다.";
+        List<CoffeeBeanDto> coffeeBeansDto = coffeeBeanService.getAllCoffeeBeansDto();
+        return ResponseEntity.ok(new Response<>(coffeeBeansDto, "10개의 커피 원두 데이터 추가 완료!"));
     }
 
     @Operation(
@@ -53,16 +55,9 @@ public class CoffeeBeanController {
             }
     )
     @GetMapping("/list")
-    public ResponseEntity<List<CoffeeBeanDto>> getAllCoffeeBeans() {
+    public ResponseEntity<Response<List<CoffeeBeanDto>>> getAllCoffeeBeans() {
         List<CoffeeBeanDto> coffeeBeansDto = coffeeBeanService.getAllCoffeeBeansDto();
-
-        if (coffeeBeansDto.isEmpty()) {
-            // 만약 데이터가 없을 경우
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        } else {
-            // 데이터가 있을 경우
-            return new ResponseEntity<>(coffeeBeansDto, HttpStatus.OK);
-        }
+        return ResponseEntity.ok(new Response<>(coffeeBeansDto, "모든 커피 데이터 열람 완료!"));
     }
 
 
